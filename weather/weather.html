@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+    <title>Weather!</title>
+  </head>
+  
+   
+  <body>
+    <form novalidate> 
+      
+      <label>Pick a City</label>
+      <input id="text" name="text" required pattern="^[a-zA-Z]+$">
+      <input type="button" id="submit" value="submit">
+      <span class="error" aria-live="polite"></span>
+      <br>
+      <div id="div">
+      </div>
+    
+    </form>
+
+    <script>
+      /*
+      const getData = async (location) => {
+  
+       let callString = `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=30e5d1b531b978f71d75434e0b221232`
+  
+  
+       let fetchPromise = new Promise( async (resolve,reject) => { 
+    
+         let yo = await fetch(callString,{mode:'cors'})
+         if (!yo.ok) {
+           console.log(yo.json())
+           reject("no")
+           console.log(yo)
+
+
+         }
+         else {
+          console.log(yo)
+
+          resolve("great")
+         }
+        }).catch(e=>{
+
+        }) 
+    
+
+      }
+      const x = getData("houston")
+      //const x = getData("ddd") 
+      */
+    </script>
+  </body>
+
+
+
+
+
+
+
+<html>
